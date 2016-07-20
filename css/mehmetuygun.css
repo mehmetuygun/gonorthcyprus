@@ -50,6 +50,7 @@
 .search {
 	height: 527px;
 	background-color: #57a1dd;
+	background-image: url("../img/background1.jpg");
 }
 .search h2 {
 	width: 250px;
@@ -63,4 +64,45 @@
 	box-shadow: 0px 0px 0px 24px rgba(119, 119, 119, 0.3);
     -moz-box-shadow: 0px 0px 0px 24px rgba(119, 119, 119, 0.3);
     -webkit-box-shadow: 0px 0px 0px 24px rgba(119, 119, 119, 0.3);
+}
+.full-width-tabs > ul.nav.nav-tabs, .full-width-tabs > ul.nav.nav-pills {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+.full-width-tabs > ul.nav.nav-tabs > li, .full-width-tabs > ul.nav.nav-pills > li {
+    float: none;
+    display: table-cell;
+}
+.full-width-tabs > ul.nav.nav-tabs > li > a, .full-width-tabs > ul.nav.nav-pills	 > li > a {
+    text-align: center;
+}
+.nav-tabs {
+	border: 0;
+	height: 40px;
+}
+.nav-tabs > li {
+	width: 100%;
+}
+.nav-tabs > li > a {
+	border: 0;
+	background-color: #f1f1f1;
+	color: #7ea4c1;
+	border-radius: 0;
+	font-weight: bold;
+	margin-right: 0;
+	line-height: 40px;
+}
+.nav-tabs > li.active > a, .nav-tabs > li.active >a:focus, .nav-tabs > li.active > a:hover {
+    color: #3170a1;
+    border: 0; 
+    font-weight: bold;
+}
+.tab-content {
+	padding-top: 30px;
+	padding-left: 20px;
+}
+.content-box {
+	background-color: #efefef;
+	padding-top: 15px;
 }
