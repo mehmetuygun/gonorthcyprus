@@ -1,3 +1,6 @@
+body {
+	background-color: #efefef;
+}
 #top-bar {
 	height: 30px;
 	line-height: 30px;
@@ -42,6 +45,19 @@
     padding-bottom: 0px;
     line-height: 90px;
     color: white;
+    font-weight: bold;
+}
+.navbar-nav > li.active:not(:hover), .navbar-nav > li > a:hover {
+	background-color: transparent;
+	border-bottom: 2px solid white;
+}
+.btn-res > a {
+	border: 2px solid white;
+	border-radius: 40px;
+}
+.btn-reservation > a {
+	line-height: 40px;
+    margin-top: 25px;
 }
  .navbar-nav > li > a:hover {
     color: white;
@@ -105,4 +121,79 @@
 .content-box {
 	background-color: #efefef;
 	padding-top: 15px;
+}
+.thumbnail {
+	padding: 0;
+	border: 0;
+}
+.caption > p {
+	font-size: 18px;
+	font-weight: bold;
+}
+.caption > p > a, .caption > p > a:hover, .caption > p > a:focus {
+	color: #8ed72b;
+	font-weight: bold;
+}
+.price {
+	font-size: 22px;
+}
+.currency {
+	font-size: 14px;
+}
+.p-c {
+	padding-bottom: 6px;
+	border-bottom: 4px solid #00a1e3;
+}
+.nav-pills > li {
+	font-size: 20px;
+}
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+	color: #3170a1;
+	font-weight: bold;
+	background-color: transparent;
+}
+.show-more {
+	background-color: #00a1e3;
+	border-radius: 2px;
+	border: 0;
+	color: white;
+}
+.btn-blue {
+	background-color: #00a1e3;
+	height: 46px;
+	font-size: 18px;
+	width: 100%;
+}
+.content-villa .tab-content{
+	padding-left: 0;
+}
+.dream {
+	margin-top: 20px;
+}
+.search-form > .form-group {
+	width: 600px;
+	margin-bottom: 0;
+}
+.input-new, .input-new:focus {
+	border-radius: 0px;
+	border-top: transparent;
+	border-right: transparent;
+	border-left: transparent;
+	border-bottom: 3px solid #00a1e3;
+	box-shadow:none;
+	font-weight: bold;
+}
+.form-group-label {
+	margin-bottom: 0;
+	color: #b2b2b2;
+}
+.btn-search {
+	background-color: #00a1e3;
+	border: 0;
+	border-radius: 20px;
+	color: white;
+	font-weight: bold;
+}
+.input-info {
+	margin-top: 15px;
 }

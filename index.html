@@ -33,7 +33,7 @@
 
     <nav class="navbar navbar-northcyprus" role="navigation">
         <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
+            
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
                     <span class="sr-only">Toggle navigation</span>
@@ -41,18 +41,18 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Ammy Villas</a>
+                <a class="navbar-brand" href="#" ><img src="img/logo.jpg" style="display: inline-block;"></a>
             </div>
-    
+            <!-- Menu GOES HERE -->
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">North Cyprus Villas</a></li>
+                <li class="active"><a href="#">North Cyprus Villas</a></li>
                 <li><a href="#">Best Deals</a></li>
                 <li><a href="#">Cyprus Flight Service</a></li>
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">How to Guide</a></li>
-                <li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i> Reservation</a></li>
+                <li class="btn-res"><a href="#" style="line-height: 40px;margin-top: 25px;"><i class="fa fa-phone" aria-hidden="true"></i> Reservation</a></li>
             </ul>
-            </div><!-- /.navbar-collapse -->
+            </div>
         </div>
     </nav>
     <div class="search">
@@ -66,22 +66,61 @@
                     </ul>
                     <div class="tab-content">
                         <div id="home" class="tab-pane fade in active">
-                            <form class="form-horizontal">
-                                <div class="row">
-                                    <div class="form-group">
-                                    <label class="col-sm-1">Address</label>
-                                    <div class="col-sm-2"><input type="text" class="form-control" /></div>
-                                    </div>
-                                    <div class="form-group">
-                                    <label class="col-sm-1">Addr. №</label>
-                                    <div class="col-sm-2"><input type="text" class="form-control" /></div>
-                                    </div>
+
+                        <form class="form-horizontal search-form">
+                            <div class="form-group pull-left form-group-label">
+                                <label for="inputdate" class="col-sm-3 control-label"></label>
+                                <div class="col-sm-4">
+                                    <p class="" id="inputdate">Arrival Date:</p>
                                 </div>
-                            </form>
+                                <div class="col-sm-4">
+                                    <p class="" id="inputdate">Departure Date:</p>
+                                </div>
+                            </div>
+
+                            <div class="form-group pull-left">
+                                <label for="inputdate" class="col-sm-3 control-label">Choose your dates</label>
+                                <div class="col-sm-4">
+                                    <input type="text" class="form-control input-new" id="inputdate" placeholder="" value="01 Feb 2016">
+                                </div>
+                                <div class="col-sm-4">
+                                    <input type="text" class="form-control input-new" id="inputdate" placeholder="" value="07 Feb 2016">
+                                </div>
+                            </div>
+
+                            <div class="form-group pull-left form-group-label">
+                                <label for="inputdate" class="col-sm-3 control-label"></label>
+                                <div class="col-sm-4">
+                                    <p class="" id="inputdate">Guest:</p>
+                                </div>
+                                <div class="col-sm-4">
+                                    <p class="" id="inputdate"></p>
+                                </div>
+                            </div>
+
+
+                            <div class="form-group pull-left">
+                                <label for="inputguest" class="col-sm-3 control-label">Number of guest</label>
+                                <div class="col-sm-4">
+                                    <input type="text" class="form-control input-new" id="inputguest" placeholder="" value="1">
+                                </div>
+                                <div class="col-sm-4">
+                                    <button type="submit" class="form-control btn-search" id="inputguest" placeholder="">SEARCH VİLLAS</button>
+                                </div>
+                            </div>
+
+                            <div class="form-group pull-left form-group-label input-info">
+                                <label for="inputdate" class="col-sm-3 control-label"></label>
+                                <div class="col-sm-8">
+                                    <p class="" id="inputdate">We Allways Offer Cheapest Prices for You.</p>
+                                </div>
+                            </div>
+
+                        </form>
+
                         </div>
                         <div id="menu1" class="tab-pane fade">
-                            <h3>Menu 1</h3>
-                            <p>Ut enim ad minim veniam, q</p>
+                            <p>O da olur...</p>
                         </div>
                     </div>
                 </div>
@@ -91,44 +130,259 @@
 
     <div class="content-box">
         <div class="container">
-            <div class="tabbable full-width-tabs">
+            <div class="content-villa">
                 <ul class="nav nav-pills">
-                    <li class="active"><a data-toggle="tab" href="#home">Villa</a></li>
-                    <li><a data-toggle="tab" href="#menu1">Flight + Villa</a></li>
-                    <li><a data-toggle="tab" href="#menu2">Flight + Villa</a></li>
-                    <li><a data-toggle="tab" href="#menu3">Flight + Villa</a></li>
+                    <li class="active"><a data-toggle="tab" href="#c1">Centre Kyrenia (12 villa)</a></li>
+                    <li><a data-toggle="tab" href="#c2">East Kyrenia</a></li>
+                    <li><a data-toggle="tab" href="#c3">West Kyrenia</a></li>
+                    <li><a data-toggle="tab" href="#c4">Famagusta & Karpas</a></li>
                 </ul>
                 <div class="tab-content">
-                    <div id="home" class="tab-pane fade in active">
+
+                    <!-- first tab  -->
+                    <div id="c1" class="tab-pane fade in active">
+                    <!-- first line of first tab -->
                         <div class="row">
-                            <div class="col-md-4">.col-md-4</div>
-                            <div class="col-md-4">.col-md-4</div>
-                            <div class="col-md-4">.col-md-4</div>
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <img src="img/villa5.jpg" alt="100%x200">
+                                    <div class="caption">
+                                        <p class="text-center">Villa Patara in Kyrenia <a href="#" class="btn btn-lin pull-rightk" role="button"><span class="p-c"><span class="price">140</span> <span class="currency">EUR</span></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <img src="img/villa3.jpg" alt="100%x200">
+                                    <div class="caption">
+                                        <p class="text-center">Villa Patara in Kyrenia <a href="#" class="btn btn-lin pull-rightk" role="button"><span class="p-c"><span class="price">140</span> <span class="currency">EUR</span></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <img src="img/villa3.jpg" alt="100%x200">
+                                    <div class="caption">
+                                        <p class="text-center">Villa Patara in Kyrenia <a href="#" class="btn btn-lin pull-rightk" role="button"><span class="p-c"><span class="price">140</span> <span class="currency">EUR</span></span></a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                        <!-- second line of first tab -->
                         <div class="row">
-                            <div class="col-md-4">.col-md-4</div>
-                            <div class="col-md-4">.col-md-4</div>
-                            <div class="col-md-4">.col-md-4</div>
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <img src="img/villa4.jpg" alt="100%x200">
+                                    <div class="caption">
+                                        <p class="text-center">Villa Patara in Kyrenia <a href="#" class="btn btn-lin pull-rightk" role="button"><span class="p-c"><span class="price">140</span> <span class="currency">EUR</span></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <img src="img/villa4.jpg" alt="100%x200">
+                                    <div class="caption">
+                                        <p class="text-center">Villa Patara in Kyrenia <a href="#" class="btn btn-lin pull-rightk" role="button"><span class="p-c"><span class="price">140</span> <span class="currency">EUR</span></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <img src="img/villa5.jpg" alt="100%x200">
+                                    <div class="caption">
+                                        <p class="text-center">Villa Patara in Kyrenia <a href="#" class="btn btn-lin pull-rightk" role="button"><span class="p-c"><span class="price">140</span> <span class="currency">EUR</span></span></a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div id="menu1" class="tab-pane fade">
-                        <h3>Menu 1</h3>
-                        <p>Ut enim ad minim veniam, q</p>
+                    <!-- second line  -->
+                    <div id="c2" class="tab-pane fade">
+                        <!-- first line of second tab -->
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <img src="img/villa6.jpg" alt="100%x200">
+                                    <div class="caption">
+                                        <p class="text-center">Villa Patara in Kyrenia <a href="#" class="btn btn-lin pull-rightk" role="button"><span class="p-c"><span class="price">140</span> <span class="currency">EUR</span></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <img src="img/villa6.jpg" alt="100%x200">
+                                    <div class="caption">
+                                        <p class="text-center">Villa Patara in Kyrenia <a href="#" class="btn btn-lin pull-rightk" role="button"><span class="p-c"><span class="price">140</span> <span class="currency">EUR</span></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <img src="img/villa6.jpg" alt="100%x200">
+                                    <div class="caption">
+                                        <p class="text-center">Villa Patara in Kyrenia <a href="#" class="btn btn-lin pull-rightk" role="button"><span class="p-c"><span class="price">140</span> <span class="currency">EUR</span></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- second line of second tab -->
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <img src="img/villa6.jpg" alt="100%x200">
+                                    <div class="caption">
+                                        <p class="text-center">Villa Patara in Kyrenia <a href="#" class="btn btn-lin pull-rightk" role="button"><span class="p-c"><span class="price">140</span> <span class="currency">EUR</span></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <img src="img/villa6.jpg" alt="100%x200">
+                                    <div class="caption">
+                                        <p class="text-center">Villa Patara in Kyrenia <a href="#" class="btn btn-lin pull-rightk" role="button"><span class="p-c"><span class="price">140</span> <span class="currency">EUR</span></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <img src="img/villa6.jpg" alt="100%x200">
+                                    <div class="caption">
+                                        <p class="text-center">Villa Patara in Kyrenia <a href="#" class="btn btn-lin pull-rightk" role="button"><span class="p-c"><span class="price">140</span> <span class="currency">EUR</span></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>                    
-                    <div id="menu2" class="tab-pane fade">
-                        <h3>Menu 1</h3>
-                        <p>Ut enim ad minim veniam, q</p>
+                    <div id="c3" class="tab-pane fade">
+                        <div class="row append-row">
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <img src="img/villa4.jpg" alt="100%x200">
+                                    <div class="caption">
+                                        <p class="text-center">Villa Patara in Kyrenia <a href="#" class="btn btn-lin pull-rightk" role="button"><span class="p-c"><span class="price">140</span> <span class="currency">EUR</span></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <img src="img/villa4.jpg" alt="100%x200">
+                                    <div class="caption">
+                                        <p class="text-center">Villa Patara in Kyrenia <a href="#" class="btn btn-lin pull-rightk" role="button"><span class="p-c"><span class="price">140</span> <span class="currency">EUR</span></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <img src="img/villa3.jpg" alt="100%x200">
+                                    <div class="caption">
+                                        <p class="text-center">Villa Patara in Kyrenia <a href="#" class="btn btn-lin pull-rightk" role="button"><span class="p-c"><span class="price">140</span> <span class="currency">EUR</span></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <img src="img/villa3.jpg" alt="100%x200">
+                                    <div class="caption">
+                                        <p class="text-center">Villa Patara in Kyrenia <a href="#" class="btn btn-lin pull-rightk" role="button"><span class="p-c"><span class="price">140</span> <span class="currency">EUR</span></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <img src="img/villa4.jpg" alt="100%x200">
+                                    <div class="caption">
+                                        <p class="text-center">Villa Patara in Kyrenia <a href="#" class="btn btn-lin pull-rightk" role="button"><span class="p-c"><span class="price">140</span> <span class="currency">EUR</span></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <img src="img/villa4.jpg" alt="100%x200">
+                                    <div class="caption">
+                                        <p class="text-center">Villa Patara in Kyrenia <a href="#" class="btn btn-lin pull-rightk" role="button"><span class="p-c"><span class="price">140</span> <span class="currency">EUR</span></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div id="menu3" class="tab-pane fade">
-                        <h3>Menu 1</h3>
-                        <p>Ut enim ad minim veniam, q</p>
+                    <div id="c4" class="tab-pane fade">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <img src="img/villa4.jpg" alt="100%x200">
+                                    <div class="caption">
+                                        <p class="text-center">Villa Patara in Kyrenia <a href="#" class="btn btn-lin pull-rightk" role="button"><span class="p-c"><span class="price">140</span> <span class="currency">EUR</span></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <img src="img/villa4.jpg" alt="100%x200">
+                                    <div class="caption">
+                                        <p class="text-center">Villa Patara in Kyrenia <a href="#" class="btn btn-lin pull-rightk" role="button"><span class="p-c"><span class="price">140</span> <span class="currency">EUR</span></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <img src="img/villa5.jpg" alt="100%x200">
+                                    <div class="caption">
+                                        <p class="text-center">Villa Patara in Kyrenia <a href="#" class="btn btn-lin pull-rightk" role="button"><span class="p-c"><span class="price">140</span> <span class="currency">EUR</span></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <img src="img/villa5.jpg" alt="100%x200">
+                                    <div class="caption">
+                                        <p class="text-center">Villa Patara in Kyrenia <a href="#" class="btn btn-lin pull-rightk" role="button"><span class="p-c"><span class="price">140</span> <span class="currency">EUR</span></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <img src="img/villa5.jpg" alt="100%x200">
+                                    <div class="caption">
+                                        <p class="text-center">Villa Patara in Kyrenia <a href="#" class="btn btn-lin pull-rightk" role="button"><span class="p-c"><span class="price">140</span> <span class="currency">EUR</span></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <img src="img/villa5.jpg" alt="100%x200">
+                                    <div class="caption">
+                                        <p class="text-center">Villa Patara in Kyrenia <a href="#" class="btn btn-lin pull-rightk" role="button"><span class="p-c"><span class="price">140</span> <span class="currency">EUR</span></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+            <div class="content-append">
+                
+            </div>
+            <button type="button" class="btn btn-blue show-more">SHOW MORE VİLLAS (6)</button>
+
+            <div class="dream">
+                <div class="thumbnail">
+                    <img src="img/dream.jpg" alt="100%x200">
+                </div>
+            </div>
         </div>
+        <p></p>
     </div>
 
     <script src="js/jquery.1.11.3.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $(".btn-blue").click(function(){
+            $(".content-append").append($('.append-row'));
+        });
+    </script>
 </body>
 </html>
