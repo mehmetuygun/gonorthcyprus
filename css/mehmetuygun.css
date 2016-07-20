@@ -1,0 +1,66 @@
+#top-bar {
+	height: 30px;
+	line-height: 30px;
+	background-color: #000000;
+}
+.phone-mid {
+	width: 800px;
+}
+.phone-top {
+	padding-left:10px;
+	display: inline-block;
+}
+.phone-number-info {
+	color: #e5e5e5;
+}
+.phone-number {
+	color: #7ed9fa;
+}
+.f-item a {
+	color: #eeeeee;
+}
+.f-item .badge {
+	background-color: #f48635;
+}
+.navbar-northcyprus {
+	background-color: #57a1dd;
+    -webkit-box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    0px 2px 4px 0px rgba(50, 50, 50, 0.75);
+	box-shadow:         0px 2px 4px 0px rgba(50, 50, 50, 0.75);
+ 	border-radius: 0px;
+}
+.navbar {
+	min-height: 90px;
+	color: white;
+	margin-bottom: 0;
+}
+.navbar-brand {
+	padding: 0 15px; height: 90px; line-height: 90px;
+}
+.navbar-nav > li > a {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    line-height: 90px;
+    color: white;
+}
+ .navbar-nav > li > a:hover {
+    color: white;
+    background-color: none;
+}
+.search {
+	height: 527px;
+	background-color: #57a1dd;
+}
+.search h2 {
+	width: 250px;
+	color: white;
+}
+.search-box {
+	width: 726px;
+	height: 280px;
+	background-color: white;
+	margin-top: 30px;
+	box-shadow: 0px 0px 0px 24px rgba(119, 119, 119, 0.3);
+    -moz-box-shadow: 0px 0px 0px 24px rgba(119, 119, 119, 0.3);
+    -webkit-box-shadow: 0px 0px 0px 24px rgba(119, 119, 119, 0.3);
+}
